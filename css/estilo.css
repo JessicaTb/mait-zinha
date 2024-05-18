@@ -1,0 +1,59 @@
+ @import url();
+
+/* variável para as cores */
+:root{
+
+    --fundo-menu-lateral: #000;
+    --fundo-escuro: #000;
+    --fundo-claro: #000 ;
+
+    --borda-clara: #000;
+    --borda-escura: #000; 
+
+    --texto-escuro: #c2b5b5 ;
+    --texto-claro:#c2b5b5;
+    --texto-hover: #000 ;
+
+
+}
+/* Mobile Menu */
+
+
+/* CSS Principal */
+body{
+    font-family: var() ;
+
+}
+
+a{
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    color: var();
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: ;
+}
+/* cabeçalho */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: var();
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+.perfil img{
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    border:2px solid var() ;
+    box-shadow:0px 0px 15px 5px red (26, 26, 26) ;
+}
