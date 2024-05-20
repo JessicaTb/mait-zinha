@@ -3,19 +3,17 @@
 /* variável para as cores */
 :root{
     --fundo-menu-lateral:#bea07b;
-    --fundo-escuro: #ca6161;
+    --fundo-escuro: #e61a1a;
     --fundo-claro: #884834 ;
 
-    --texto-escuro: #884834;
+    --texto-escuro: #9e513a;
     --texto-claro:#4b2e0d;
-    --texto-menu: #f32e2e;
+    --texto-menu: #c92626;
 
     --detalhe-claro: #f4d0a7;
     --detalhe-escura: #945050;
-    --detalhes-ícone: #5a432a;
+    --detalhes-ícone: #775a3a;
 }
-
-
 /* CSS Principal */
 body{
     font-family: "Playfair Display", sans-serif;
@@ -154,7 +152,7 @@ h1, h2, h3, h4, h5, h6{
 #hero{
     width: 100%;
     height: 100vh;
-    background: url("../img/logo\ top.jpg") top center;
+    background: url("../img/hero-bg.jpg") top center;
     background-size: cover;
 }
 #hero::before{
