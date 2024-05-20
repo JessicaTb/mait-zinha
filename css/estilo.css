@@ -3,25 +3,25 @@
 /* variável para as cores */
 :root{
     --fundo-menu-lateral:#bea07b;
-    --fundo-escuro: #e61a1a;
-    --fundo-claro: #884834 ;
+    --fundo-escuro: #a55638;
+    --fundo-claro: #b47575 ;
 
-    --texto-escuro: #9e513a;
-    --texto-claro:#4b2e0d;
+    --texto-claro: #8b6c4d;
+    --texto-escuro:#50371f;
     --texto-menu: #c92626;
 
-    --detalhe-claro: #f4d0a7;
-    --detalhe-escura: #945050;
-    --detalhes-ícone: #775a3a;
+    --detalhe-claro: #a7f4ee;
+    --detalhe-escura: #4b3824;
+    --detalhes-ícone: #b49c75;
 }
 /* CSS Principal */
 body{
     font-family: "Playfair Display", sans-serif;
-    background-color: var(--borda-clara);
+    background-color: var(--texto-escuro);
 }
 
 a{
-    color:var(--borda-escura);
+    color:var(--texto-escuro);
     text-decoration:none;
 }
 a:hover{
@@ -46,11 +46,11 @@ h1, h2, h3, h4, h5, h6{
     overflow-y: auto;
 }
 .perfil img{
-    margin: 15px auto;
+    margin: 20px auto;
     display: block;
     width: 120px;
-    border:2px solid var(--borda-clara);
-    box-shadow:0px 0px 15px 5px rgb(125, 57, 193) (26, 26, 26);
+    border:5px solid var(--texto-escuro);
+    box-shadow:0px 0px 15px 5px rgb(151, 62, 20) ;
 }
 .perfil h1 {
     font-size:24px;
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .perfil .social-links a:hover {
     background: var(--texto-claro) ;
-    color: var(--borda-clara) ;
+    color: var(--detalhe-escura) ;
     text-decoration:none ;
 }
 /* manu nav desktop  */
@@ -112,13 +112,13 @@ h1, h2, h3, h4, h5, h6{
 .nav-menu .active:focus,
 .nav-menu li:hover>a{
     text-decoration: none;
-    color: var(--texto-claro);
+    color: var(--texto-escuro);
 }
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i{
-    color: var(--texto-claro);
+    color: var(--texto-escuro);
 } /* Fim header */
 
 /* nav mobile */
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6{
 }
 #hero::before{
     content: "";
-    background: rgba(5, 13, 26, 0.5);
+    background: rgba(27, 19, 19, 0.336);
     position: absolute;
     top: 0;
     right: 0;
@@ -175,10 +175,10 @@ h1, h2, h3, h4, h5, h6{
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: var(--borda-clara);
+    color: var(--texto-escuro);
 }
 #hero p{
-    color: var(--borda-clara);
+    color: var(--fundo-menu-lateral);
     margin-bottom: 50px;
     font-size: 26px;
     font-family: "Playfair Display", sans-serif;
