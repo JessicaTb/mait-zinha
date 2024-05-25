@@ -3,14 +3,14 @@
 /* variável para as cores */
 :root{
     --fundo-menu-lateral:#bea07b;
-    --fundo-escuro: #a55638;
+    --fundo-escuro: #8a5039;
     --fundo-claro: #b47575 ;
 
     --texto-claro: #8b6c4d;
     --texto-escuro:#50371f;
     --texto-menu: #412d1a;
 
-    --detalhe-claro: #a7f4ee;
+    --detalhe-claro: #cbab76;
     --detalhe-escura: #4b3824;
     --detalhes-ícone: #b49c75;
 }
@@ -100,8 +100,6 @@ h1, h2, h3, h4, h5, h6{
         padding-right: 12px;
     }
 }
-
-
 
 
 
@@ -250,7 +248,7 @@ section{
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: var(--texto-claro);
+    color: var(--detalhe-claro);
 }
 .section-title h2::after{
     content: "";
@@ -267,7 +265,7 @@ section{
 .sobre .container h3{
     font-size: 40px;
     font-weight: 500;
-    color: var(--texto-claro) ;
+    color: var(--detalhe-claro) ;
 }
 .sobre .container ul{
     list-style: none;
@@ -286,4 +284,36 @@ section{
     margin-right: 10px;
     color: var(--detalhes-ícone);
     line-height: 0;
+}
+.conquistas{
+    padding-bottom: 30px;
+}
+.conquistas .count-box{
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i{
+    display: block;
+    font-size: 45px;
+    color: var(--texto-claro);
+    float: left ;
+    line-height: 0;
+}
+.conquistas .count-box span{
+    font-size: 30px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--texto-claro);
+    margin-left: 60px;
+}
+.conquistas .count-box p{
+    padding: 7px 0 0 0;
+    margin: 0 0 0 60px ;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16px;
+    color: var(--detalhe-claro);
+}
+.conquistas .count-box i:hover{
+    color: var(--detalhe-claro);
 }
