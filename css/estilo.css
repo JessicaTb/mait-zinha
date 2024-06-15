@@ -242,6 +242,7 @@ section{
 }
 .section-title{
     padding-bottom: 30px ;
+    color: var(--fundo-menu-lateral);
 }
 .section-title h2{
     font-size: 50px;
@@ -379,11 +380,13 @@ section{
     font-weight: 600;
     margin-bottom: 10px;
 }
-resumo .resumo-item ul {
+.resumo .resumo-item ul {
     padding-left: 20px;
+    
 }
 .resumo .resumo-item ul li {
     padding-bottom: 10px;
+    color: var(--fundo-menu-lateral);
 }
 .resumo .resumo-item::before {  /* ::pseudo elemento */
     content: "";
@@ -474,4 +477,40 @@ resumo .resumo-item ul {
 .portfolio .portfolio-wrap:hover .portfolio-links{
     opacity: 1;
     bottom: 0;
+}
+/* portfolio pagina adicional == detalhes */
+
+/* VOLTAR */
+.servicos .icon-box{
+    margin-bottom: 20px;
+}
+.servicos .icon{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--detalhes-ícone);
+    border-radius: 50%;
+    margin-right: 12px;
+    transition: 0.5s;
+    border: 2px solid var(--fundo-escuro);
+    box-shadow: 0 0 8px 2px #834420;
+}
+.servicos .icon i{
+    font-size: 22px;
+    color: var(--detalhe-escura);
+}
+.servicos .title{
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--fundo-menu-lateral);
+}
+.servicos .descricao{
+    margin-left: 60px;
+    line-height: 20px;
+    font-size: 18px;
 }
