@@ -354,7 +354,7 @@ section{
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: var(--texto-escuro);
+    color: var(--fundo-menu-lateral);
 }
 .resumo .resumo-item {
     padding: 0 0 20px 20px;
@@ -368,7 +368,7 @@ section{
     font-weight: 800;
     text-transform: uppercase;
     font-family: 'Cormorant-Garamond';
-    color: var(--texto-escuro);
+    color: var(--texto-claro);
     margin-bottom: 25px;
 }
 .resumo .resumo-item h5 {
