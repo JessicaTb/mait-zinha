@@ -369,7 +369,7 @@ section{
     font-weight: 800;
     text-transform: uppercase;
     font-family: 'Cormorant-Garamond';
-    color: var(--texto-claro);
+    color: var(--detalhe-claro);
     margin-bottom: 25px;
 }
 .resumo .resumo-item h5 {
