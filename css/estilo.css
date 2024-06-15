@@ -285,6 +285,7 @@ section{
     color: var(--detalhes-ícone);
     line-height: 0;
 }
+/* Conquistas */
 .conquistas{
     padding-bottom: 30px;
 }
@@ -314,6 +315,84 @@ section{
     font-size: 16px;
     color: var(--detalhe-claro);
 }
-.conquistas .count-box i:hover{
+/* .conquistas .count-box i:hover{
     color: var(--detalhe-claro);
+} */
+/* skills / vendas */
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
 }
+.skills .progress .skill {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Cormorant Garamond" sans-serif;
+    color: var(--detalhe-claro)
+}
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-bg {
+    background: var(--detalhe-escura);
+    height: 10px;
+}
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 5s;
+    background: var(--detalhe-claro);
+}
+/* resumo */
+.resumo .resumo-titulo {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--detalhes-ícone);
+}
+.resumo .resumo-item {
+    padding: 0 0 20px 20px;
+    /* margin-top: ; */
+    border-left: 2px solid var(--texto-claro);
+    position: relative;
+}
+.resumo .resumo-item h4 {
+    line-height: 22px;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Cormorant-Garamond';
+    color: var(--texto-claro);
+    margin-bottom: 25px;
+}
+.resumo .resumo-item h5 {
+    font-size: 16px;
+    background: var(--detalhes-ícone);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+resumo .resumo-item ul {
+    padding-left: 20px;
+}
+.resumo .resumo-item ul li {
+    padding-bottom: 10px;
+}
+.resumo .resumo-item::before {  /* ::pseudo elemento */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--texto-escuro);
+    border: 2px solid var(--texto-claro);
+}  
