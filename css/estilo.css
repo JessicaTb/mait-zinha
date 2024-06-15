@@ -453,7 +453,7 @@ resumo .resumo-item ul {
     justify-content: center;
 }
 .portfolio .portfolio-wrap .portfolio-links a{
-    color: var(--fundo-claro);
+    color: var(--detalhe-escura);
     font-size: 28px;
     text-align: center;
     background-color: var(--texto-claro);
