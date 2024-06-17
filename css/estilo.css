@@ -238,18 +238,18 @@ section{
     overflow: hidden;
 }
 .section-bg{
-    background: var(--detalhe-escura);
+    background: var(--detalhe-claro);
 }
 .section-title{
     padding-bottom: 30px ;
-    color: var(--fundo-menu-lateral);
+    color: var(--detalhe-claro);
 }
 .section-title h2{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: var(--detalhe-claro);
+    color: var(--detalhes-ícone);
 }
 .section-title h2::after{
     content: "";
@@ -266,24 +266,26 @@ section{
 .sobre .container h3{
     font-size: 40px;
     font-weight: 500;
-    color: var(--detalhe-claro) ;
+    color: var(--texto-claro) ;
 }
-.sobre .container ul{
+.sobre .container  {
     list-style: none;
     padding: 0;
+    color: var(--fundo-menu-lateral);
 }
 .sobre .container ul li{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    
 }
 .sobre .container ul strong{
     margin-right: 15px;
 }
-.sobre .container ul i{
+.sobre .container ul i {
     font-size: 22px;
     margin-right: 10px;
-    color: var(--detalhes-ícone);
+    color: var(--texto-claro);
     line-height: 0;
 }
 /* Conquistas */
@@ -319,8 +321,8 @@ section{
 /* .conquistas .count-box i:hover{
     color: var(--detalhe-claro);
 } */
-/* skills / vendas */
-.skills .progress{
+/* skills / vendas */ /* Nossa história  */
+/* .skills .progress{
     height: 60px;
     display: block;
     background: none;
@@ -333,37 +335,37 @@ section{
     display: block;
     font-weight: 600;
     font-family: "Cormorant Garamond" sans-serif;
-    color: var(--detalhe-claro)
+    color: var(--fundo-claro)
 }
 .skills .progress .skill .val {
     float: right;
     font-style: normal;
 }
 .skills .progress-bar-bg {
-    background: var(--detalhe-escura);
+    background: var(--fundo-claro);
     height: 10px;
 }
 .skills .progress-bar {
     width: 1px;
     height: 10px;
     transition: 5s;
-    background: var(--detalhe-escura);
-}
+    background: var(--fundo-claro);
+} */
 /* resumo */
 .resumo .resumo-titulo {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: var(--fundo-menu-lateral);
+    color: var(--texto-claro);
 }
-.resumo .resumo-item {
+.resumo .resumo-item { /* linha da lateral */
     padding: 0 0 20px 20px;
     /* margin-top: ; */
     border-left: 2px solid var(--detalhe-claro);
     position: relative;
 }
-.resumo .resumo-item h4 {
+.resumo .resumo-item h4 { /* subtitulos */
     line-height: 22px;
     font-size: 22px;
     font-weight: 800;
@@ -380,9 +382,11 @@ section{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.resumo .resumo-item p{
+    color: var(--detalhe-claro);
+}
 .resumo .resumo-item ul {
     padding-left: 20px;
-    
 }
 .resumo .resumo-item ul li {
     padding-bottom: 10px;
@@ -513,4 +517,5 @@ section{
     margin-left: 60px;
     line-height: 20px;
     font-size: 18px;
+    color: var(--fundo-escuro);
 }
