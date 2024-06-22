@@ -2,17 +2,17 @@
 
 /* variável para as cores */
 :root{
-    --fundo-menu-lateral:#bea07b;
-    --fundo-escuro: #8a5039;
-    --fundo-claro: #b47575 ;
+    --fundo-menu-lateral:#9b643c;
+    --fundo-escuro: #9d5f3c;
+    --fundo-claro: #be855e ;
 
-    --texto-claro: #8b6c4d;
-    --texto-escuro:#50371f;
-    --texto-menu: #412d1a;
+    --texto-claro: #684023;
+    --texto-escuro:#4e2619;
+    --texto-menu: #411a1a;
 
-    --detalhe-claro: #cbab76;
+    --detalhe-claro: #92522f;
     --detalhe-escura: #4b3824;
-    --detalhes-ícone: #b49c75;
+    --detalhes-ícone: #c48e57;
 }
 /* CSS Principal */
 body{
@@ -242,14 +242,14 @@ section{
 }
 .section-title{
     padding-bottom: 30px ;
-    color: var(--detalhe-claro);
+    color: var(--texto-claro);
 }
 .section-title h2{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: var(--detalhes-ícone);
+    color: var(--texto-claro);
 }
 .section-title h2::after{
     content: "";
@@ -266,7 +266,7 @@ section{
 .sobre .container h3{
     font-size: 40px;
     font-weight: 500;
-    color: var(--texto-claro) ;
+    color:var(--fundo-claro) ;
 }
 .sobre .container  {
     list-style: none;
@@ -285,7 +285,7 @@ section{
 .sobre .container ul i {
     font-size: 22px;
     margin-right: 10px;
-    color: var(--texto-claro);
+    color: var(--detalhes-ícone);
     line-height: 0;
 }
 /* Conquistas */
@@ -299,7 +299,7 @@ section{
 .conquistas .count-box i{
     display: block;
     font-size: 45px;
-    color: var(--texto-claro);
+    color: var(--detalhes-ícone);
     float: left ;
     line-height: 0;
 }
@@ -308,7 +308,7 @@ section{
     line-height: 40px;
     display: block;
     font-weight: 700;
-    color: var(--texto-claro);
+    color: var(--detalhes-ícone);
     margin-left: 60px;
 }
 .conquistas .count-box p{
@@ -316,7 +316,7 @@ section{
     margin: 0 0 0 60px ;
     font-family: "Playfair Display", sans-serif;
     font-size: 16px;
-    color: var(--detalhe-claro);
+    color: var(--fundo-claro);
 }
 /* .conquistas .count-box i:hover{
     color: var(--detalhe-claro);
@@ -544,8 +544,172 @@ section{
     margin: 10px 0 5px 0;
     color: var(--detalhes-ícone);
 }
-.depoimentos .depoimento-item h4{
+.depoimentos .depoimento-item p{
     font-size: 14px;
     margin: 0;
     color: var(--detalhe-claro);
 }
+.depoimentos .depoimento-item .quote-left,
+.depoimentos .depoimento-item .quote-right{
+    color: var(--detalhe-claro);
+    font-size: 26px;
+}
+.depoimentos .depoimento-item .quote-left{
+    display: inline-block;
+    position: relative;
+    left: -5px;
+    color: var(--detalhe-claro);
+}
+.depoimentos .depoimento-item .quote-right{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: -5px;
+    color: var(--detalhe-claro);
+}
+.depoimentos .depoimento-item p{
+    font-style: italic;
+    color: var(--detalhe-claro);
+    margin: 0 15px 30px 15px ;
+    padding: 20px;
+    background: #4d261a;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px ;
+}
+.depoimentos .depoimento-item p::after{
+    content: "";
+    position: absolute;
+    bottom:-20px ;
+    left: calc(50% - 20px);
+    width: 0;
+    height: 0;
+    border-top: 20px solid var(--texto-escuro) ;
+    border-left:20px solid transparent ;
+    border-right: 20px solid transparent;
+}
+.depoimentos .swiper-pagination{
+    margin-top: 55px;
+    position: relative;
+}
+.depoimentos .swiper-pagination 
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+    background: var(--detalhes-ícone);
+     /* opacity: 1;
+    border: 1px solid black;  */
+}
+.depoimentos .swiper-pagination 
+.swiper-pagination-bullet-active{
+    background: var(--detalhes-ícone);
+}
+/* ********Contato // Forms******** */
+.contato{
+    padding-bottom: 130px;
+}
+.contato .info{
+    padding: 30px ;
+    background: var(--fundo-menu-lateral);
+    width: 100% ;
+    box-shadow: 0 0 21px 0 rgba(199, 77, 47, 0.877) ;
+}
+.contato .info i{
+    font-size: 20px;
+    color: var(--texto-escuro);
+    background-color: var(--texto-claro);
+    float: left;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.contato .info h4 {
+    color: var(--texto-escuro);
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contato .info p{
+    color: var(--texto-menu);
+    font-size: 16px;
+    padding: 0 0 10px 60px;
+    margin-bottom: 30px ;
+}
+.contato .info .fone p{
+    color: var(--texto-escuro);
+}
+/* FORMS****** */
+.contato .email-form{
+    padding: 30px ;
+    background: var(--fundo-menu-lateral);
+    width: 100% ;
+    box-shadow: 0 0 21px 0 rgba(199, 77, 47, 0.877) ;
+}
+.contato .email-form .form-group{
+    padding-bottom: 20px;
+}
+.contato .email-form label{
+    color: var(--texto-menu);
+    margin-bottom: 2px ;
+    font-size: 18px;
+}
+.contato .email-form input,
+.contato .email-form textarea{
+    box-shadow: none;
+    font-size: 16px;
+}
+.contato .email-form input{
+    height: 40px;
+}
+.contato .email-form textarea{
+    padding: 110px 15px;
+}
+.contato .email-form button[type=submit]{
+    background: var(--texto-escuro);
+    color: var(--detalhes-ícone);
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 24px;
+   /*  width: 70px;
+    height: 30px;
+    font-size: 18px; */
+    transition: 0.4s;
+}
+.contato .email-form button[type=submit]{
+    background: var(--texto-menu);
+}
+/* back-to-top // voltar ao topo */
+.back-to-top{
+     position: fixed;
+    visibility: hidden;
+    opacity: 0; 
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    background: var(--detalhes-ícone);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+.back-to-top i{
+    color: var(--texto-menu);
+    font-size: 30px;
+    line-height: 0;
+}
+.back-to-top:hover{
+    background:var(--fundo-menu-lateral);
+}
+.back-to-top.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* footer */
+
+/* ********breadcrums***** */
