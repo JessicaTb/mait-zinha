@@ -3,16 +3,18 @@
 /* variável para as cores */
 :root{
     --fundo-menu-lateral:#9b643c;
-    --fundo-escuro: #9d5f3c;
+    --fundo-escuro: #3d170d;
     --fundo-claro: #be855e ;
 
-    --texto-claro: #684023;
-    --texto-escuro:#4e2619;
-    --texto-menu: #411a1a;
+    --texto-claro: #e4d2b2;
+    --texto-escuro:#3d1b0d;
+    --texto-menu: #a06d41;
 
     --detalhe-claro: #92522f;
     --detalhe-escura: #4b3824;
-    --detalhes-ícone: #c48e57;
+    --detalhes-ícone: #e4d2b2;
+
+    fundo escuro -#3d170d
 }
 /* CSS Principal */
 body{
@@ -205,16 +207,16 @@ h1, h2, h3, h4, h5, h6{
     color: var(--texto-escuro);
 }
 #hero p{
-    color: var(--fundo-menu-lateral);
+    color: var(--texto-escuro);
     margin-bottom: 50px;
     font-size: 26px;
     font-family: "Playfair Display", sans-serif;
 }
 #hero p span{
-    color: var(--fundo-menu-lateral);
+    color: var(--texto-escuro);
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid var(--texto-claro);
+    border-bottom: 3px solid var(--texto-escuro);
 }
 @media(min-width: 1024px ) {
     #hero {
@@ -242,14 +244,14 @@ section{
 }
 .section-title{
     padding-bottom: 30px ;
-    color: var(--texto-claro);
+    color: var(--texto-menu);
 }
 .section-title h2{
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: var(--texto-claro);
+    color: var(--texto-claro); 
 }
 .section-title h2::after{
     content: "";
@@ -266,21 +268,21 @@ section{
 .sobre .container h3{
     font-size: 40px;
     font-weight: 500;
-    color:var(--fundo-claro) ;
+    color:var(--texto-claro) ;
 }
 .sobre .container  {
     list-style: none;
     padding: 0;
-    color: var(--fundo-menu-lateral);
+    color: var(--texto-menu);
 }
 .sobre .container ul li{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    
 }
 .sobre .container ul strong{
     margin-right: 15px;
+    color: var(--fundo-claro);
 }
 .sobre .container ul i {
     font-size: 22px;
@@ -371,26 +373,26 @@ section{
     font-weight: 800;
     text-transform: uppercase;
     font-family: 'Cormorant-Garamond';
-    color: var(--detalhe-claro);
+    color: var(--texto-menu);
     margin-bottom: 25px;
 }
-.resumo .resumo-item h5 {
+.resumo .resumo-item h5{
     font-size: 16px;
-    background: var(--detalhes-ícone);
+    background: var(--fundo-menu-lateral);
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.resumo .resumo-item p{
-    color: var(--detalhe-claro);
+.resumo .resumo-item {
+    color: var(--fundo-claro);
 }
 .resumo .resumo-item ul {
     padding-left: 20px;
 }
 .resumo .resumo-item ul li {
     padding-bottom: 10px;
-    color: var(--fundo-menu-lateral);
+    color: var(--fundo-claro);
 }
 .resumo .resumo-item::before {  /* ::pseudo elemento */
     content: "";
@@ -400,8 +402,8 @@ section{
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: var(--detalhes-ícone);
-    border: 2px solid var(--texto-claro);
+    background: var(--detalhes-ícone);/* bolinha  */
+    border: 2px solid var(--texto-menu);
 }  
 /* portfolio //  vendas //  catalogo */
 .portfolio .portfolio-item{
@@ -499,7 +501,7 @@ section{
     border-radius: 50%;
     margin-right: 12px;
     transition: 0.5s;
-    border: 2px solid var(--fundo-escuro);
+    border: 2px solid var(--texto-claro);
     box-shadow: 0 0 8px 2px #834420;
 }
 .servicos .icon i{
@@ -517,7 +519,7 @@ section{
     margin-left: 60px;
     line-height: 20px;
     font-size: 18px;
-    color: var(--fundo-escuro);
+    color: var(--texto-claro);
 }
 .servicos .descricao{
     margin-left: 60px;
